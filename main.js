@@ -9,7 +9,10 @@ function setup() {
 
 function draw() {
     background(220);
-    ellipse(50, 50, 80, 80);
+    textAlign(CENTER);
+    textSize(50);
+    text('Do you think hotdogs are sandwhiches?', windowWidth/2, 100);
+    text('Stand in front of TV to participate', windowWidth/2, windowHeight - 50);
   }
 
 
