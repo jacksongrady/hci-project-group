@@ -19,13 +19,15 @@ const questions = ["Do you feel satisfied with the quality of career strategy re
                     "Have you switched your intended major more than once since coming to Yale?",
                     "Have you been to Woads more than ten times throughout your time at Yale?"]
 
+
 // Retrieve the last question index from local storage or initialize it to 0
 let index = localStorage.getItem("index") || 0;
 
-// function setup() {
-//     // get the dimensions of the parent HTML element
-//   //createCanvas(windowWidth, windowHeight);
-// }
+
+function setup() {
+    // get the dimensions of the parent HTML element
+  //createCanvas(windowWidth, windowHeight);
+}
 //
 // function draw() {
 //     // background(220);
