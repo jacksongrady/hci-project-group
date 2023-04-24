@@ -1,20 +1,39 @@
 var socket = new WebSocket("ws://cpsc484-01.yale.internal:8888/frames");
 
 var host = "cpsc484-01.yale.internal:8888";
-function setup() {
-    // get the dimensions of the parent HTML element
-  //createCanvas(windowWidth, windowHeight);
 
-}
+const questions = ["Do you feel satisfied with the quality of career strategy resources you are receiving at Yale University?",
+                    "Do you believe that Yale University provides enough opportunities for extracurricular activities?",
+                    "Do you find that Yale extracurricular clubs and organizations are overly selective?",
+                    "Do you actively participate in Greek Life at Yale?",
+                    "Do you think Yale should increase its efforts to accommodate dietary restrictions in dining halls?",
+                    "Do you feel satisfied with the quality and availability of mental health resources on campus?",
+                    "Do you believe that having an academic advisor was helpful to you in your first two years at Yale?",
+                    "Do you feel satisfied with the academic support resources at Yale, including your residential college Dean?", 
+                    "Do you like visiting the residential college butteries?", 
+                    "Do you believe that TD buttery is the best buttery on campus?",
+                    "Have you ever had a roommate horror story at Yale?",
+                    "Have you ever found a mouse or a rat in your residential college?",
+                    "Have you ever used ChatGPT to help with your homework?",
+                    "Given the chance, would you join a secret society in your senior year?", 
+                    "Have you switched your intended major more than once since coming to Yale?",
+                    "Have you been to Woads more than ten times throughout your time at Yale?"]
 
-function draw() {
-    // background(220);
-    // textAlign(CENTER);
-    // textSize(50);
-    // text('Do you think hotdogs are sandwhiches?', windowWidth/2, 100);
-    // text('Stand in front of TV to participate', windowWidth/2, windowHeight - 50);
-  }
+// Retrieve the last question index from local storage or initialize it to 0
+let index = localStorage.getItem("index") || 0;
 
+// function setup() {
+//     // get the dimensions of the parent HTML element
+//   //createCanvas(windowWidth, windowHeight);
+// }
+//
+// function draw() {
+//     // background(220);
+//     // textAlign(CENTER);
+//     // textSize(50);
+//     // text('Do you think hotdogs are sandwhiches?', windowWidth/2, 100);
+//     // text('Stand in front of TV to participate', windowWidth/2, windowHeight - 50);
+// }
 
 $(document).ready(function () {
     frames.start();

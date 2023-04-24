@@ -18,6 +18,9 @@ function draw() {
 
 $(document).ready(function () {
     frames.start();
+    index = 0;
+    localStorage.setItem("index", index);
+    question.text(questions[index]);
 });
 
 var frames = {
