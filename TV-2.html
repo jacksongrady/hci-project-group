@@ -75,15 +75,20 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js"></script>
     <script src = "main.js" type="text/javascript"></script>
-    <script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script src="tv9.js" type="text/javascript"></script><script>
       $(document).ready(function() {
+        while(1){
         if(global_answer == 'yes'){
+          console.log(global_answer)
           window.location.href="TV-6-7.html";
         }
 
         if(global_answer == 'exit'){
           window.location.href="TV-10.html";
         }
+      }
         
         $('#yes-button').click(function() {
           alert('You clicked Yes!');
@@ -99,8 +104,5 @@
         });
       });
     </script>
-    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
-    <script src="tv9.js" type="text/javascript"></script>
   </body>
 </html>
