@@ -22,6 +22,8 @@
 
 <p>As a final point, we ask that when testing, <b>no sudden, constant movements</b> are made when trying to convey an answer because the Kinect might misinterpret something or the program might not transition the way we want. That type of behavior is unexpected, but we felt like it was a point worth including.</p>
 
+<p><b>IMPORTANT</b>: There are a series of icons that display poses for the user to indicate which options they want to choose while going through our installation. For "yes" and "no", the user will either lift their left or right hand above their head. The icon shows the arm going up, but it might be a bit unclear to some users, so we want to make sure that when testing, the arm is held above the head to follow the motion that the icon is showing.</p>
+
 ## Collaboration Record
 
 1. Jackson Grady
