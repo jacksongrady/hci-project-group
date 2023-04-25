@@ -63,6 +63,7 @@ var frames = {
 
 
     show: function (frame) {
+        const question = $(".question");
         var command = get_pose_command(frame);
         //console.log(command)
         if (command !== null) {
