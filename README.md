@@ -29,8 +29,8 @@
     - NetID: mal249
     - Contribution: I helped with the question and answer database for the installation as well as writing up the Markdown file for the assignment that described dependencies, project description, and the collaboration record. 
 3. Misho Gabashvili
-    - NetID:
-    - Contribution:
+    - NetID: mg2736
+    - Contribution: I helped with setting up the instructions page, as well as organizing some other pages. Implemented questions and allowed the program to display them in a sequential order using local storage and reset each time the program runs. Worked on the pose commands and conditional statements to gauge users' answer. Implemented some aesthetic features of the display. 
 4. Danu Metaferia
     - NetID:
     - Contribution:
