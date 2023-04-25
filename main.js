@@ -1,21 +1,8 @@
 var socket = new WebSocket("ws://cpsc484-01.yale.internal:8888/frames");
 
 var host = "cpsc484-01.yale.internal:8888";
-// function setup() {
-//     // get the dimensions of the parent HTML element
-//    createCanvas(windowWidth, windowHeight);
 
-// }
-
-// function draw() {
-//     background(220);
-//     textAlign(CENTER);
-//     textSize(50);
-//     text('Do you think hotdogs are sandwhiches?', windowWidth/2, 100);
-//     text('Stand in front of TV to participate', windowWidth/2, windowHeight - 50);
-//   }
-
-
+var one_person;
 $(document).ready(function () {
     frames.start();
 });
@@ -38,6 +25,11 @@ var frames = {
         //console.log(command)
         if (command !== null) {
             sendPoseCommand(command);
+        }
+        if(frame.people.length == 1){
+            one_person = 1;
+        } else {
+            one_person = 0;
         }
         //console.log(frame);
     }
@@ -66,16 +58,6 @@ function get_pose_command(frame) {
     if (frame.people.length < 1) {
       return null;
     }
-    
-    // // Normalize by subtracting the spine_chest joint coordinates
-    // var spine_chest_x = frame.people[0].joints[2].position.x;
-    // var spine_chest_y = frame.people[0].joints[2].position.y;
-
-    // var left_wrist_x = (frame.people[0].joints[7].position.x - spine_chest_x) * -1;
-    // var left_wrist_y = (frame.people[0].joints[7].position.y - spine_chest_y) * -1;
-   
-    // var right_wrist_x = (frame.people[0].joints[14].position.x - spine_chest_x) * -1;
-    // var right_wrist_y = (frame.people[0].joints[14].position.y - spine_chest_y) * -1;
 
     var head_y = (frame.people[0].joints[26].position.y) * -1;
     var right_h_y = (frame.people[0].joints[15].position.y) * -1;
@@ -102,33 +84,4 @@ function get_pose_command(frame) {
     } else {
         return null;
     }
-
-    // //neither wrist is above the chest
-    // if (left_wrist_y < 0 && right_wrist_y < 0) {
-    //     return command;
-    // }
-
-    // //both wrists are significantly above the chest
-    // if (left_wrist_y > 400 && right_wrist_y > 400) { 
-    //     command = 73; //Pose 3 = 'exit'
-    // }
-
-    // //Note: the conditionals below are divided into two parts (for now) for clarity
-
-    // //if left wrist is higher and right wrist is significantly lower than the chest
-    // if (left_wrist_y > 0 && right_wrist_y < -400) { 
-    //     //if left wrist is significantly farther from the chest but right wrist is somewhat close
-    //     if (left_wrist_x > 400 && right_wrist_x < 200) { 
-    //         command = 74 //Pose 1 = 'yes'
-    //     }
-    // }
-
-    // //if left wrist is significantly lower and right wrist is higher than the chest
-    // if (left_wrist_y < -400 && right_wrist_y > 0) {
-    //     //if right wrist is significantly farther from the chest but left wrist is somewhat close
-    //     if (left_wrist_x < 200 && right_wrist_x > 400) {
-    //         command = 75 //Pose 2 = 'no'
-    //     }
-    // }
-    // return command;
 }

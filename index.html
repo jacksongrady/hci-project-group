@@ -42,16 +42,18 @@
             $(document).ready(function() {
                 var timeLeft = 10;
 
-
-
+                
                 function updateTimer() {
                 timeLeft--;
+                if(one_person != 1){
+                  timeLeft = 10;
+                }
                 $('#timer').text(timeLeft);
                 //reset timer if more than one person is in front of tv
                 if (timeLeft === 0) {
                     clearInterval(timerInterval);
 
-                    //window.location.href="TV-2.html";
+                    window.location.href="TV-2.html";
                 }
             }
                 var timerInterval = setInterval(updateTimer, 1000);
