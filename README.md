@@ -18,7 +18,9 @@
 ## Constraints from the Deployment Environment
 <p>For our project to function as intended, only <b>ONE</b> user should be in front of the TV installation. Our code can only process one user going at a time since it uses the coordinates of the different poses on one person, so multiple users will result in an unsuccessful test run of the installation or unintended behavior.</p>
 
-<p>Additionally, for the application to run as intended, the user should stand about 4-5 feet from the installation for the application to run. Various y-axis measurements of the arms corresponding to the poses are being used to process user input and therefore decide what gets displayed on the screen, so it is important that the user remains at that distance so there is room for the Kinect to see that vertical change in movement from each of the respective poses </p>
+<p>Additionally, for the application to run as intended, the user should stand about 4-5 feet from the installation for the application to work correctly; however, there is some flexibility with this requirement due to how our group decided to calculate the change in vertical height of both limbs. As long as the Kinect can see that the difference between the right or left hand and the head is positive, it counts that as a raised hand, so the important thing is that the Kinect can see the head and hands, which only wouldn't occur if the user was right up at the screen with their hands above the Kinect and out of view. Therefore, we recommend 4-5 feet away (or even a bit more) just to get the smoothest user experience. Various y-axis measurements of the arms corresponding to the poses are being used to process user input and therefore decide what gets displayed on the screen, so it is important that the user remains at that distance so there is room for the Kinect to see that vertical change in movement from each of the respective poses</p>
+
+<p>As a final point, we ask that when testing, no sudden, constant movements are made when trying to convey an answer because the Kinect might misinterpret something or the program might not transition the way we want. That type of behavior is unexpected, but we felt like it was a point worth including.</p>
 
 ## Collaboration Record
 
@@ -27,10 +29,10 @@
     - Contribution: I helped set up and manage the repo. I set up the page transitions between pages, worked on pose detection, worked on setting up data collection and display for the questions we ask (pie charts), and also worked on the styling of the pages as well as general miscellaneous bug fixing. 
 2. Marcus Lisman
     - NetID: mal249
-    - Contribution: I helped with the question and answer database for the installation as well as writing up the Markdown file for the assignment that described dependencies, project description, and the collaboration record. 
+    - Contribution: I helped with the question and answer database for the installation as well as writing up the Markdown file for the assignment that described dependencies, project description, and the collaboration record. I also helped with the coding for pose detection and debugging/testing onsite at the display to make sure the project was functional. Overall, my team worked well together and we pulled through with solid contributions from everyone to implement a working project.
 3. Misho Gabashvili
-    - NetID:
-    - Contribution:
-4. Danu Metaferia
-    - NetID:
-    - Contribution:
+    - NetID: mg2736
+    - Contribution: I helped with setting up the instructions page, as well as organizing some other pages in the display. Implemented questions and allowed the program to display them in a sequential order using local storage and reset each time the program runs. Worked on the pose commands and conditional statements to gauge users' answers to questions. 
+ 4. Danu Metaferia
+    - NetID: dym7
+    - Contribution: I helped with pose detection and implementation, setup with the correct limbs for readings from the Kinect, and supported the rest of the team with general miscellaneous tasks.
