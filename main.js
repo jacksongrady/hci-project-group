@@ -34,7 +34,7 @@ var frames = {
         //console.log(frame);
     }
 };
-
+var global_answer;
 function sendPoseCommand(command) {
     answer = "test";
     switch (command) {
@@ -50,7 +50,7 @@ function sendPoseCommand(command) {
         answer = 'no';
         break;
     }
-    console.log(answer);
+    global_answer = answer;
   }
 
 function get_pose_command(frame) {
