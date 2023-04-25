@@ -37,9 +37,12 @@
         <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@2.9.3/dist/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+        <script src="main.js" type="text/javascript"></script>
         <script>
             $(document).ready(function() {
                 var timeLeft = 10;
+
+
 
                 function updateTimer() {
                 timeLeft--;
@@ -48,7 +51,7 @@
                 if (timeLeft === 0) {
                     clearInterval(timerInterval);
 
-                    window.location.href="TV-2.html";
+                    //window.location.href="TV-2.html";
                 }
             }
                 var timerInterval = setInterval(updateTimer, 1000);
