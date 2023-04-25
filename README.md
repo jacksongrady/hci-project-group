@@ -23,8 +23,8 @@
 ## Collaboration Record
 
 1. Jackson Grady
-    - NetID:
-    - Contribution:
+    - NetID: jdg77
+    - Contribution: I helped set up and manage the repo. I set up the page transitions between pages, worked on setting up data collection and display for the questions we ask (pie charts), and also worked on the styling of the pages as well as general miscellaneous bug fixing. 
 2. Marcus Lisman
     - NetID: mal249
     - Contribution: I helped with the question and answer database for the installation as well as writing up the Markdown file for the assignment that described dependencies, project description, and the collaboration record. 
