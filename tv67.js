@@ -17,7 +17,15 @@ const questions = ["Do you feel satisfied with the quality of career strategy re
                     "Have you ever used ChatGPT to help with your homework?",
                     "Given the chance, would you join a secret society in your senior year?", 
                     "Have you switched your intended major more than once since coming to Yale?",
-                    "Have you been to Woads more than ten times throughout your time at Yale?"]
+                    "Have you been to Woads more than ten times throughout your time at Yale?",
+                    "Have you spoken to your academic advisor at any point in the last academic year?",
+                    "Have you had to wait more than an hour for Yale Health services, even if the situation was urgent?",
+                    "Do you think that Yale should offer minors or expand its certificate offerings?",
+                    "Do you think listening to the bells on Harkness Tower provides a positive experience to Yale students?",
+                    "Do you think GHeav's prices are too high considering its target customers?",
+                    "Has having suitemates enhanced your Yale experience in a positive way?",
+                    "Do you think it is fair that students are charged for laundry and printing?",
+                    "Are Yale's science facilities up to date enough to conduct research at its fullest potential?"]
 
 
 // Retrieve the last question index from local storage or initialize it to 0
