@@ -37,4 +37,4 @@
     - Contribution: I helped with setting up the instructions page, as well as organizing some other pages in the display. Implemented questions and allowed the program to display them in a sequential order using local storage and reset each time the program runs. Worked on the pose commands and conditional statements to gauge users' answers to questions. 
  4. Danu Metaferia
     - NetID: dym7
-    - Contribution: I helped with pose detection and implementation, setup with the correct limbs for readings from the Kinect, and supported the rest of the team with general miscellaneous tasks.
+    - Contribution: I helped with pose detection and implementation, setup with the correct limbs for readings from the Kinect, and supported the rest of the team with general miscellaneous tasks. 
