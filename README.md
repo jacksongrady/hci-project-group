@@ -5,7 +5,7 @@
 1. Jackson Grady
 2. Marcus Lisman
 3. Misho Gabashvili
-4. Danu Metaferia
+4. Daniel Metaferia
 
 ## Installing Dependencies and Running the Project
 <p>No additional dependencies are required for this project. It integrates p5.js with normal vanilla JavaScript, HTMl, CSS (with Bootstrap integrated for formatting), but as for additional dependencies, everything the project needs to run is already imported and included in the project files. The project runs as intended by the standard TV upload system discussed in class and used for installation testing.</p>
@@ -35,6 +35,6 @@
 3. Misho Gabashvili
     - NetID: mg2736
     - Contribution: I helped with setting up the instructions page, as well as organizing some other pages in the display. Implemented questions and allowed the program to display them in a sequential order using local storage and reset each time the program runs. Worked on the pose commands and conditional statements to gauge users' answers to questions. 
- 4. Danu Metaferia
+ 4. Daniel Metaferia
     - NetID: dym7
     - Contribution: I helped with pose detection and implementation, setup with the correct limbs for readings from the Kinect, and supported the rest of the team with general miscellaneous tasks. 
